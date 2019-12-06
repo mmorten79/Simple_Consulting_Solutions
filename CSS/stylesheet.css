@@ -1,0 +1,577 @@
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-image: linear-gradient(white , #ffa6c3)
+}
+
+.logo{
+  width: 25%;
+}
+
+.topmenu {
+  list-style-type: none;
+  margin: 0;
+  width: 100%;
+  background-image: linear-gradient(grey, lightgrey);
+  padding: 2px 2px 0px 1px;
+  transition: 1.5;
+  border-radius: 25px;
+  overflow: hidden;
+  float: left;
+}
+
+.topmenu a {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  color:black;
+  border: 3px;
+  padding: 7px 10px;
+  text-decoration: none;
+  background-image: linear-gradient(grey, lightgrey);
+}
+
+.topmenu a.active {
+color: white;
+border-width: 1px;
+border-style: solid;
+border-color: black;
+opacity: 0.7;
+}
+
+.topmenu a:hover {
+background-color: #ffa6c3;
+color: white;
+border-width: 1px;
+border-style: solid;
+border-color: black;
+opacity: 0.7;
+background-image: linear-gradient(black, darkgrey);
+}
+
+/*.sidenav {
+  height: 100px;
+  width: 73px;
+  position: absolute;
+  border-radius: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  margin-top: 2.8%;
+  z-index: 1;
+  top: 27;
+  left: 0;
+  background-image: linear-gradient(lightgre  y, #ffa6c3);
+  overflow-x: hidden;
+  padding-top: 5px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 6px;
+  text-decoration: none;
+  font-size: 14px;
+  color: gray;
+  border-radius: 12px;
+  opacity: 0.6;
+  display: block;
+}
+
+a.active.sidenav {
+  color: grey;
+  background-color: darkgrey;
+  cursor: pointer;
+  background-image: linear-gradient(#ffa6c3, white);
+  opacity: 0.6;
+}
+
+.sidenav a:hover {
+  color: grey;
+  background-color: darkgrey;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  background-image: linear-gradient(#ffa6c3, white);
+  opacity: 0.6;
+}*/
+
+#text-home{
+  position: absolute;
+  top: 20%;
+  color: rgb(127, 152, 153);
+  padding-left: 5%; 
+  font-family: 'Comic', serif;
+  font-size: 14px;  
+}
+#text-mission{
+  position: absolute;
+  top: 40%;
+  color: rgb(127, 152, 153);
+  padding-left: 55%; 
+  font-family: 'Comic', serif;
+  font-size: 14px;  
+}
+
+#text-contact{
+  position: absolute;
+  color: rgb(127, 152, 153);
+  font-family: 'Comic', serif;
+  font-size: 14px; 
+  margin-top: 3%;
+  padding-left: 3%;
+}
+
+#border-services{
+  top:20px;
+  border-radius: 20px;
+  width: 600px;
+  height: 100px;
+  border-style: solid;
+  background-image: linear-gradient(black, darkgrey);
+}
+
+#text-service{
+  position: absolute;
+  top: 30%;
+  color: rgb(139, 140, 179);
+  padding-left: 10%; 
+  font-family: 'Comic', serif;
+  font-size: 14px;  
+}
+#text-service-hd{
+  color: rgb(127, 152, 153); 
+  font-family: 'Comic', serif;
+
+}
+
+#home{
+height: 700px;
+
+}
+
+#mission {
+  height: 900px;
+  }
+
+#service{
+   height: 700px;
+}
+
+#contact{
+   height: 500px;
+
+}
+.content {
+  margin-top: 0%;
+  padding-left: 0%;
+}
+
+.fa {
+  padding: 10px; 
+  font-size: 15px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2.5px 1px;
+}
+
+#mission-photo{
+  width: 600px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  margin-left: 70.90%;
+  margin-top: 0%;
+  position: absolute;
+  background: #3B5998;
+  color: white;
+}
+
+.fa-google {
+  margin-left: 70.90%;
+  margin-top: 1.10%;
+  position: absolute;
+  top: 20px;
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  margin-left: 70.90%;
+  margin-top: 1.55%;
+  position: absolute;
+  top: 50px;
+  background: #007bb5;
+  color: white;
+}
+
+.footer-mc {
+  position: relative;
+  left: 0;
+  bottom: 70%;
+  width: 100%;
+  background-image: none;
+  color: orange;
+  text-align: center;
+  font-size: 10px;
+}
+
+.footer-h {
+  position: relative;
+  left: 0;
+  bottom: 100%;
+  width: 100%;
+  background-image: white;
+  color: orange;
+  text-align: center;
+  font-size: 10px;
+}
+
+/* #### Mobile Phones Portrait #### */
+/*@media screen and (max-device-width: 480px) and (orientation: portrait){
+
+  body {
+  width: auto;
+  height: auto;
+  margin: 0;
+  font-family: 'Kaushan Script', cursive;
+  background-image: linear-gradient(white , #ffa6c3)
+}
+
+.logo{
+  padding: 2px;
+  width: 50%;
+  height: auto;
+}
+
+.topmenu {
+  list-style-type: none;
+  margin: 0;
+  width: 100%;
+  background-image: linear-gradient(grey, lightgrey);
+  padding: .5px .5px .5px .5px;
+  transition: 1.5;
+  border-radius: 20px;
+  overflow: hidden;
+  float: left;
+}
+
+.topmenu a {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  color:black;
+  padding: 4px 7px;
+  font-size: 8px;
+  text-decoration: none;
+  background-image: linear-gradient(grey, lightgrey);
+}
+*/
+/*.topmenu a.active {
+color: white;
+border-width: 1px;
+border-style: solid;
+border-color: black;
+opacity: 0.7;
+}*/
+
+/*.topmenu a:hover {
+background-color: #ffa6c3;
+color: white;
+border-width: 1px;
+border-style: solid;
+border-color: black;
+opacity: 0.7;
+background-image: linear-gradient(black, darkgrey);
+}
+*/
+/*
+#text-mission{
+  position: absolute;
+  top: 14%;
+  color: black;
+  padding-left: 5%; 
+  font-family: 'Comic', serif;
+  font-size: 12px;  
+}
+
+
+  #text-contact{
+  position: absolute;
+  color: rgb(127, 152, 153);
+  font-family: 'Comic', serif;
+  font-size: 14px; 
+  margin-top: 10%;
+  padding-left: 3%;
+}
+
+  .content {
+    height: 150px;
+    width: 100%;
+}
+
+#border-services{
+  top:20px;
+  border-radius: 20px;
+  width: 100%;
+  height: 300px;
+  border-style: solid;
+  background-image: linear-gradient(black, darkgrey);
+}
+
+#text-service{
+  position: absolute;
+  top: 30%;
+  color: white;
+  padding-left: 10%; 
+  font-family: 'Comic', serif;
+  font-size: 14px;  
+}
+#text-service-hd{
+  color: rgb(127, 152, 153); 
+  font-family: 'Comic', serif;
+  padding-top: 10px;
+}
+
+.fa {
+  padding: 10px; 
+  font-size: 15px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2.5px 1px;
+}
+
+#mission-photo{
+  width: 380px;
+  height: 100%;
+}
+#mission{
+  width: 380px;
+  height: 540px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  margin-left: 40.90%;
+  margin-top: 0%;
+  position: absolute;
+  background: #3B5998;
+  top:500px;
+  color: white;
+}
+
+.fa-google {
+  margin-left: 40.90%;
+  margin-top: 1.10%;
+  position: absolute;
+  top: 530px;
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  margin-left: 40.90%;
+  margin-top: 1.55%;
+  position: absolute;
+  top: 560px;
+  background: #007bb5;
+  color: white;
+}
+}
+*/
+@media screen and (max-width: 640px) and (orientation: portrait) {
+
+body {
+  width: 499px;
+  height: 699px;
+  margin: 0;
+  font-family: 'Kaushan Script', cursive;
+  background-image: linear-gradient(white , #ffa6c3)
+}
+
+.logo{
+  padding: 2px;
+  width: 50%;
+  height: auto;
+}
+
+.topmenu {
+  list-style-type: none;
+  margin: 0;
+  width: 100%;
+  background-image: linear-gradient(grey, lightgrey);
+  padding: .5px .5px .5px .5px;
+  transition: 1.5;
+  border-radius: 20px;
+  overflow: hidden;
+  float: left;
+}
+
+.topmenu a {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  color:black;
+  padding: 4px 7px;
+  font-size: 10px;
+  text-decoration: none;
+  background-image: linear-gradient(grey, lightgrey);
+}
+
+.topmenu a.active {
+color: white;
+border-width: 1px;
+border-style: solid;
+border-color: black;
+opacity: 0.7;
+}
+
+.topmenu a:hover {
+background-color: #ffa6c3;
+color: white;
+border-width: 1px;
+border-style: solid;
+border-color: black;
+opacity: 0.7;
+background-image: linear-gradient(black, darkgrey);
+}
+
+
+#text-mission{
+  position: absolute;
+  top: 20%;
+  color: darkblue;
+  padding-left: 5%; 
+  font-family: 'Comic', serif;
+  font-size: 12px;  
+}
+
+
+  #text-contact{
+  position: absolute;
+  color: rgb(127, 152, 153);
+  font-family: 'Comic', serif;
+  font-size: 14px; 
+  margin-top: 0%;
+  padding-left: 3%;
+}
+
+#home{
+height: 700px;
+
+}
+
+#service{
+   height: 200px;
+}
+
+#contact{
+   height: 500px;
+}
+.content {
+  height: 150px;
+  width: 100%;
+}
+
+#border-services{
+  top:20px;
+  border-radius: 20px;
+  width: 100%;
+  height: 300px;
+  border-style: solid;
+  background-image: linear-gradient(black, darkgrey);
+}
+
+#text-service{
+  position: absolute;
+  top: 30%;
+  color: white;
+  padding-left: 10%; 
+  font-family: 'Comic', serif;
+  font-size: 14px;  
+}
+
+#text-service-hd{
+  color: rgb(127, 152, 153); 
+  font-family: 'Comic', serif;
+  padding-top: 10px;
+}
+
+.fa {
+  padding: 10px; 
+  font-size: 15px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2.5px 1px;
+}
+
+#mission-photo{
+  width: 100%;
+  height: 100%;
+}
+#mission{
+  width: 380px;
+  height: 700px;
+}
+ #service
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  margin-left: 40.90%;
+  margin-top: 0%;
+  position: absolute;
+  background: #3B5998;
+  top:498px;
+  color: white;
+}
+
+.fa-google {
+  margin-left: 40.90%;
+  margin-top: 1.10%;
+  position: absolute;
+  top: 530px;
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  margin-left: 40.90%;
+  margin-top: 1.55%;
+  position: absolute;
+  top: 563px;
+  background: #007bb5;
+  color: white;
+}
+
+.footer-h {
+  position: relative;
+  left: 0;
+  bottom: 7%;
+  background-image: none;
+  color: orange;
+  text-align: center;
+  font-size: 10px;
+}
+
+.footer-s {
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  background-image: none;
+  color: orange;
+  text-align: center;
+  font-size: 10px;
+}
+
+}

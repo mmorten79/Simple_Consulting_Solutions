@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<title>Simple Consulting Solutions (SCS4PM)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href=".\CSS\stylesheet.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono&subset=cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap"> 
+
+<head>
+    <div>
+    <img class="logo" src=".\Logo\web_format\FINAL2.png"> 
+      <a class="fa fa-facebook" href="https://www.facebook.com/simplecs4pm/"></a> 
+      <a class="fa fa-google" href="https://google.com"></a>
+      <a class="fa fa-linkedin" href="https://linkedin.com"></a>
+
+
+    </div>
+<body>
+
+
+	<div class="topmenu" >
+  <a href=".\index.html" onclick="myFunction('home','content');"  >Home</a>
+  <a href=".\mission.html" onclick="myFunction('mission','content');" >Mission</a>
+  <a href=".\service.html" onclick="myFunction('service','content');">Services</a>
+  <a href="#contact" onclick="myFunction('contact','content');" id="defaultOpen" >Contact Us</a>
+  </div>
+
+
+
+<!--   <div class="sidenav">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#clients">Clients</a>
+</div> -->
+
+  <div id="home" class="content">
+    <img src=".\CSS\images\frontpage.jpg" width="100%">
+         <p id="text-home"> </p>
+</div>
+  <div id="mission" class="content"> 
+    <img src=".\CSS\images\buildings.jpg"  width="600">
+    <p id="text-mission"><strong>Our Mission & Values </strong> <br>
+      <br>
+    To Create Positive Profitable Results for Owners, <br>
+    Investors, Multi-Family Professionals and Our <br> Commununity through Honesty, Integrity, Professionalism,<br>
+    Education, Innovation, Transparency and Relationships. </p>
+  </div>
+
+  <div id="border-services">
+    <h1 id="text-service-hd" font-size="17px"></h1>  
+      
+
+   <div id ="contact" class="content"> 
+    <form id="text-contact" method="post" name="contact_form" action="contact-form-handler.php"> 
+    Name:  <br><input type="text" name="name"><br>
+    Email:  <br><input type="text" name="email"><br><br>
+    Message:<br><textarea name="message"></textarea>
+    <br><br><input type="submit" value="Submit"> </form>
+  </div>
+</div>
+
+
+</head>
+
+        <script>
+              function myFunction(cityName,image) {
+                var i, tabcontent, sidedisp;
+
+                tabcontent = document.getElementsByClassName("content");
+              
+                for (i = 0; i < tabcontent.length; i++) {
+                 tabcontent[i].style.display = "none";
+                }
+                document.getElementById(cityName).style.display = "block";
+                tabcontent.style.backgroundColor = 'white';      
+
+              }
+                document.getElementById("defaultOpen").click();
+          </script>
+          <script type="text/javascript">
+            var frmvalidator = new Validator("contactform");
+            frmvalidator.addValidation("name", "req", "Please provide your namee");
+            frmvalidator.addValidation("email", "req", "Please provide your email");
+          </script>
+<div class="footer-mc">
+  <p>Footer</p>
+</div>
+</body>
+</html>
