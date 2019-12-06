@@ -49,51 +49,6 @@ opacity: 0.7;
 background-image: linear-gradient(black, darkgrey);
 }
 
-/*.sidenav {
-  height: 100px;
-  width: 73px;
-  position: absolute;
-  border-radius: 20px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
-  margin-top: 2.8%;
-  z-index: 1;
-  top: 27;
-  left: 0;
-  background-image: linear-gradient(lightgre  y, #ffa6c3);
-  overflow-x: hidden;
-  padding-top: 5px;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 6px;
-  text-decoration: none;
-  font-size: 14px;
-  color: gray;
-  border-radius: 12px;
-  opacity: 0.6;
-  display: block;
-}
-
-a.active.sidenav {
-  color: grey;
-  background-color: darkgrey;
-  cursor: pointer;
-  background-image: linear-gradient(#ffa6c3, white);
-  opacity: 0.6;
-}
-
-.sidenav a:hover {
-  color: grey;
-  background-color: darkgrey;
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
-  background-image: linear-gradient(#ffa6c3, white);
-  opacity: 0.6;
-}*/
-
 #text-home{
   position: absolute;
   top: 20%;
@@ -116,6 +71,7 @@ a.active.sidenav {
   color: rgb(127, 152, 153);
   font-family: 'Comic', serif;
   font-size: 14px; 
+  top:20%;
   margin-top: 3%;
   padding-left: 3%;
 }
@@ -124,7 +80,15 @@ a.active.sidenav {
   top:20px;
   border-radius: 20px;
   width: 600px;
-  height: 100px;
+  height: 250px;
+  border-style: solid;
+  background-image: linear-gradient(black, darkgrey);
+}
+#border-services-contact{
+  top:20px;
+  border-radius: 20px;
+  width: 600px;
+  height: 300px;
   border-style: solid;
   background-image: linear-gradient(black, darkgrey);
 }
@@ -132,8 +96,8 @@ a.active.sidenav {
 #text-service{
   position: absolute;
   top: 30%;
-  color: rgb(139, 140, 179);
-  padding-left: 10%; 
+  color: white;
+  padding-left: 4%; 
   font-family: 'Comic', serif;
   font-size: 14px;  
 }
@@ -149,15 +113,15 @@ height: 700px;
 }
 
 #mission {
-  height: 900px;
+  height: 500px;
   }
 
 #service{
-   height: 700px;
+   height: 300px;
 }
 
 #contact{
-   height: 500px;
+   height: 250px;
 
 }
 .content {
@@ -230,8 +194,32 @@ height: 700px;
   font-size: 10px;
 }
 
+.footer-s {
+  position: absolute;
+  left: 50%;
+  top:10%;
+  bottom: 0%;
+  background-image: white;
+  color: orange;
+  text-align: center;
+  font-size: 10px;
+}
+
+.footer-c {
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  background-image: white;
+  color: orange;
+  text-align: center;
+  font-size: 10px;
+}
+
+
+
+
 /* #### Mobile Phones Portrait #### */
-/*@media screen and (max-device-width: 480px) and (orientation: portrait){
+  /*@media screen and (max-device-width: 480px) and (orientation: portrait){
 
   body {
   width: auto;
