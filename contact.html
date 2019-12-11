@@ -14,7 +14,7 @@
     <div>
     <img class="logo" src=".\Logo\web_format\FINAL2.png"> 
       <a class="fa fa-facebook" href="https://www.facebook.com/simplecs4pm/"></a> 
-      <a class="fa fa-google" href="https://google.com"></a>
+     <!-- <a class="fa fa-google" href="https://google.com"></a>-->
       <a class="fa fa-linkedin" href="https://linkedin.com"></a>
 
 
@@ -30,37 +30,29 @@
   </div>
 
 
-
-<!--   <div class="sidenav">
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#clients">Clients</a>
-</div> -->
-
-  <div id="home" class="content">
-    <img src=".\CSS\images\frontpage.jpg" width="100%">
-         <p id="text-home"> </p>
-</div>
-  <div id="mission" class="content"> 
-    <img src=".\CSS\images\buildings.jpg"  width="600">
-    <p id="text-mission"><strong>Our Mission & Values </strong> <br>
-      <br>
-    To Create Positive Profitable Results for Owners, <br>
-    Investors, Multi-Family Professionals and Our <br> Commununity through Honesty, Integrity, Professionalism,<br>
-    Education, Innovation, Transparency and Relationships. </p>
-  </div>
-
   <div id="border-services-contact">
     </div>
    <div id ="contact" class="content"> 
-    <form id="text-contact" method="post" name="contact_form" action="contact-form-handler.php"> 
+    <form action="mailto:simplecs4pm@gmail.com" id="text-contact" method="post" name="contact_form" enctype="text/plain"> 
     Name:  <br><input type="text" name="name"><br>
     Email:  <br><input type="text" name="email"><br><br>
     Message:<br><textarea name="message"></textarea>
-    <br><br><input type="submit" value="Submit"> </form>
-    
+    <br><br><input type="submit" value="send"> </form>
+
   </div>
 
+<div id="border-services-contact2">
+
+<!-- <div class="content" id="contact"> -->
+  <p id="text-address"> 
+    <img id="logo-content" src=".\Logo\web_format\FINAL2.png"> <br>
+   <strong> Simple Consulting Solutions 4 Property Management LLC </strong><br>
+  &nbsp &nbsp 3820 Tutwiler Ave. <br>
+  &nbsp &nbsp Memphis, Tennessee 38122 <br>
+  &nbsp &nbsp Phone: (901)567-4907 <br>
+&nbsp &nbsp Email: simplecs4pm@gmail.com</p>
+<!-- </div> -->
+</div>
 
 
 </head>
@@ -86,7 +78,6 @@
             frmvalidator.addValidation("email", "req", "Please provide your email");
           </script>
 <div class="footer-c">
-  <p>Footer</p>
 </div>
 </body>
 </html>

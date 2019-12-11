@@ -1,27 +1,25 @@
 <?php
-$errors ="";
-
-$myemail = 'simplecs4pm@gmail.com';
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+$formcontent= "From: $name \n Message: $message";
+$recipient = "simplecs4m@gmail.com";
+$subject = "Contact Form";
+$mailheader = "From: $email \r\n";
+$errors = '';
 
 	if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message'])) {
-		$errors = "\n Error: all of the boxes are required  \n Please try again .";
+		echo "\n Error: all of the boxes are required  \n Please try again .";
 	}
-$name=$_POST['name'];
-$email_address = $_POST['email'];
-$message = $_POST['message'];
-	
-	if(!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", $email_address)){
 
-	$errors .= "\n Error: Invalid email address";
-}
-	if (empty($errors)){
-		$to=$myemail;
-		$email_subject = "Contact form submission by: $name";
-		$email_body = "New message Received!!". "Here are the message details....\n Name: $name \n" .
-					   "Email: $email_address \n ". "Services needed: \n $message";
-	    $headers = "From: $myemail \n";
-	    $headers .= "Reply-To: $email_address";
-	    mail($to, $email_subject, $email_body, $headers);
-	    header('Location: contact-form-thank-you.html');
+
+
+	if(!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", $email)){
+
+		echo "\n Error: Invalid email address";
 	}
+	else{
+	mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+	header('Location: contact-form-thank-you.html');
+         }
 	?>
